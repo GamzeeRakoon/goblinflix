@@ -20,4 +20,8 @@
   border: none;
   cursor: pointer;
   font-size: 18px;
+  color: black;
+  background-color: white;
+  padding: 5px;
+  border-radius: 5px;
 }

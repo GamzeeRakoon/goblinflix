@@ -1,10 +1,10 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import axios from "./axios";
+import axios from "../functions/axios";
 import "./Row.css";
 import Image from "next/image";
 import TrailerModal from "./TrailerModal";
-import { getTrailerUrl } from "./movieUtils";
+import { getTrailerUrl } from "../functions/movieUtils";
 
 const base_url = "https://image.tmdb.org/t/p/original/";
 

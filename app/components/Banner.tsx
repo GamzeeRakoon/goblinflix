@@ -1,10 +1,10 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import axios from "./axios";
-import requests from "./requests";
+import axios from "../functions/axios";
+import requests from "../functions/requests";
 import "./Banner.css";
 import TrailerModal from "./TrailerModal";
-import { getTrailerUrl } from "./movieUtils";
+import { getTrailerUrl } from "../functions/movieUtils";
 
 interface Movie {
   name: string;
