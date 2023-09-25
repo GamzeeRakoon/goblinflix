@@ -1,18 +1,18 @@
 "use client";
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/home";
 import Profile from "./pages/profile";
 
-function page() {
+function Page() {
   return (
-    <BrowserRouter>
+    <Router>
       <Routes>
         <Route index element={<Home />} />
         <Route path="/profile" element={<Profile />} />
       </Routes>
-    </BrowserRouter>
+    </Router>
   );
 }
 
-export default page;
+export default Page;

@@ -1,0 +1,27 @@
+.grid {
+  padding-top: 100px;
+}
+
+.grid__title {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.grid__container {
+  justify-content: center;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fill, 186px);
+}
+
+.grid__poster {
+  cursor: pointer;
+  object-fit: contain;
+  margin-right: 10px;
+  transition: transform 450ms;
+}
+
+.grid__poster:hover {
+  transform: scale(1.04);
+  opacity: 1;
+}

@@ -9,6 +9,7 @@ function home() {
     <div className="app">
       <Nav />
       <Banner />
+
       <Row
         title="Popular Movies"
         fetchUrl={requests.fetchPopularMovie}

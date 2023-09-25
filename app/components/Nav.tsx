@@ -5,8 +5,7 @@ import "./Nav.css";
 import logo from "../img/goblin.png";
 import avatar from "../img/Avatar.jpg";
 import DropdownItem from "./DropdownItem";
-import { Link } from "react-router-dom";
-import home from "../pages/home";
+import Link from "next/link";
 
 function Nav() {
   const [show, handleShow] = useState(false);
@@ -29,9 +28,9 @@ function Nav() {
 
   return (
     <div className={`nav ${show && "nav__black"}`}>
-      <Link to={home}>
+      <a href="/">
         <Image className="nav__logo" src={logo} alt="goblinflix" />
-      </Link>
+      </a>
 
       <div className="nav-dropdown-menu">
         <div className="">
